@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Results | SDG 15</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header class="navbar">
+
+        <a href="index.html" class="logo">
+            
+        </a>
+
+        <button class="menu-toggle" id="menuToggle">
+            ☰
+        </button>
+
+        <nav id="navMenu">
+            <a href="index.html">Home</a>
+            <a href="survey.html">Survey</a>
+            <a href="results.html" class="active-page">Results</a>
+            <a href="action.html">Take Action</a>
+            <a href="organizations.html">Organizations</a>
+        </nav>
+
+    </header>
+
+    <main>
+
+        <section class="page-header">
+
+            <p class="eyebrow">
+                REAL SURVEY DATA
+            </p>
+
+            <h1>
+                Survey Results
+            </h1>
+
+            <p>
+                These statistics are calculated from the responses
+                submitted through our survey.
+            </p>
+
+            <button id="shareButton" class="button">
+                Share This Survey!
+            </button>
+
+            <p id="shareMessage"></p>
+
+        </section>
+
+        <section class="section">
+
+            <div class="stats-grid">
+
+                <div class="stat-card">
+                    <span id="totalResponses">0</span>
+                    <p>Total Responses</p>
+                </div>
+
+                <div class="stat-card">
+                    <span id="seriousPercentage">0%</span>
+                    <p>Think Deforestation Is Serious</p>
+                </div>
+
+                <div class="stat-card">
+                    <span id="sdgPercentage">0%</span>
+                    <p>Have Heard of SDG 15</p>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="section">
+
+            <div class="section-heading">
+
+                <h2>
+                    How serious is deforestation?
+                </h2>
+
+            </div>
+
+            <div id="deforestationResults" class="results-list"></div>
+
+        </section>
+
+        <section class="section">
+
+            <div class="section-heading">
+
+                <h2>
+                    Awareness of SDG 15
+                </h2>
+
+            </div>
+
+            <div id="awarenessResults" class="results-list"></div>
+
+        </section>
+
+        <section class="section">
+
+            <div class="section-heading">
+
+                <h2>
+                    Main Environmental Concerns
+                </h2>
+
+            </div>
+
+            <div id="issueResults" class="results-list"></div>
+
+        </section>
+
+        <section class="section">
+
+            <div class="section-heading">
+
+                <h2>
+                    Environmental Participation
+                </h2>
+
+            </div>
+
+            <div id="participationResults" class="results-list"></div>
+
+        </section>
+
+        <section class="section">
+
+            <div class="section-heading">
+
+                <h2>
+                    Preferred Actions
+                </h2>
+
+            </div>
+
+            <div id="actionResults" class="results-list"></div>
+
+        </section>
+
+    </main>
+
+    <footer>
+
+        <p>
+            SDG 15: Life on Land X The Good Dinosaur
+        </p>
+
+    </footer>
+
+    <script type="module" src="js/results.js"></script>
+    <script type="module" src="js/share.js"></script>
+
+</body>
+
+</html>

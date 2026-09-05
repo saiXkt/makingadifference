@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Survey | SDG 15</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header class="navbar">
+
+        <a href="index.html" class="logo">
+            
+        </a>
+
+        <button class="menu-toggle" id="menuToggle">
+            ☰
+        </button>
+
+        <nav id="navMenu">
+            <a href="index.html">Home</a>
+            <a href="survey.html" class="active-page">Survey</a>
+            <a href="results.html">Results</a>
+            <a href="action.html">Take Action</a>
+            <a href="organizations.html">Organizations</a>
+        </nav>
+
+    </header>
+
+    <main>
+
+        <section class="page-header">
+
+            <p class="eyebrow">
+                YOUR VOICE MATTERS
+            </p>
+
+            <h1>
+                SDG 15 Survey
+            </h1>
+
+            <p>
+                Answer these five questions to help us understand
+                people's views on life on land.
+            </p>
+
+        </section>
+
+        <section class="section">
+
+            <form id="surveyForm" class="survey-form">
+
+                <div class="question">
+
+                    <h2>
+                        1. How serious do you think deforestation is?
+                    </h2>
+
+                    <label>
+                        <input
+                            type="radio"
+                            name="deforestation"
+                            value="Not serious"
+                            required
+                        >
+                        Not serious
+                    </label>
+
+                    <label>
+                        <input
+                            type="radio"
+                            name="deforestation"
+                            value="Slightly serious"
+                        >
+                        Slightly serious
+                    </label>
+
+                    <label>
+                        <input
+                            type="radio"
+                            name="deforestation"
+                            value="Serious"
+                        >
+                        Serious
+                    </label>
+
+                    <label>
+                        <input
+                            type="radio"
+                            name="deforestation"
+                            value="Very serious"
+                        >
+                        Very serious
+                    </label>
+
+                </div>
+
+                <div class="question">
+
+                    <h2>
+                        2. Have you heard of SDG 15 before?
+                    </h2>
+
+                    <label>
+                        <input
+                            type="radio"
+                            name="sdg_awareness"
+                            value="Yes"
+                            required
+                        >
+                        Yes
+                    </label>
+
+                    <label>
+                        <input
+                            type="radio"
+                            name="sdg_awareness"
+                            value="No"
+                        >
+                        No
+                    </label>
+
+                </div>
+
+                <div class="question">
+
+                    <h2>
+                        3. Which environmental issue concerns you most?
+                    </h2>
+
+                    <label>
+                        <input
+                            type="radio"
+                            name="main_issue"
+                            value="Deforestation"
+                            required
+                        >
+                        Deforestation
+                    </label>
+
+                    <label>
+                        <input
+                            type="radio"
+                            name="main_issue"
+                            value="Wildlife loss"
+                        >
+                        Wildlife loss
+                    </label>
+
+                    <label>
+                        <input
+                            type="radio"
+                            name="main_issue"
+                            value="Climate change"
+                        >
+                        Climate change
+                    </label>
+
+                    <label>
+                        <input
+                            type="radio"
+                            name="main_issue"
+                            value="Water pollution"
+                        >
+                        Water pollution
+                    </label>
+
+                </div>
+
+                <div class="question">
+
+                    <h2>
+                        4. Have you participated in an environmental activity?
+                    </h2>
+
+                    <label>
+                        <input
+                            type="radio"
+                            name="participation"
+                            value="Yes"
+                            required
+                        >
+                        Yes
+                    </label>
+
+                    <label>
+                        <input
+                            type="radio"
+                            name="participation"
+                            value="No"
+                        >
+                        No
+                    </label>
+
+                </div>
+
+                <div class="question">
+
+                    <h2>
+                        5. Which action would you be most likely to take?
+                    </h2>
+
+                    <label>
+                        <input
+                            type="radio"
+                            name="preferred_action"
+                            value="Plant trees"
+                            required
+                        >
+                        Plant trees
+                    </label>
+
+                    <label>
+                        <input
+                            type="radio"
+                            name="preferred_action"
+                            value="Protect wildlife"
+                        >
+                        Protect wildlife
+                    </label>
+
+                    <label>
+                        <input
+                            type="radio"
+                            name="preferred_action"
+                            value="Spread awareness"
+                        >
+                        Spread awareness
+                    </label>
+
+                    <label>
+                        <input
+                            type="radio"
+                            name="preferred_action"
+                            value="Change daily habits"
+                        >
+                        Change daily habits
+                    </label>
+
+                    <label>
+                        <input
+                            type="radio"
+                            name="preferred_action"
+                            value="Use Ecosia"
+                        >
+                        Use Ecosia
+                    </label>
+
+                </div>
+
+                <button
+                    type="submit"
+                    class="button"
+                >
+                    Submit Survey
+                </button>
+
+                <p id="surveyMessage"></p>
+
+            </form>
+
+        </section>
+
+    </main>
+
+    <footer>
+
+        <p>
+            SDG 15: Life on Land X The Good Dinosaur
+        </p>
+
+    </footer>
+
+    <script type="module" src="js/survey.js"></script>
+
+</body>
+
+</html>
