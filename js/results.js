@@ -29,26 +29,29 @@ async function loadResults() {
 
     const total = data.length;
 
-    const seriousCount = data.filter(
+    // Q1 (deforestation): now "Not aware / Somewhat aware / Aware / Very aware"
+    const awareCount = data.filter(
         (response) =>
-            response.deforestation === "Serious" ||
-            response.deforestation === "Very serious"
+            response.deforestation === "Aware" ||
+            response.deforestation === "Very aware"
     ).length;
 
-    const awarenessCount = data.filter(
+    // Q3 (sdg_awareness): now "Not concerned / Somewhat concerned / Concerned / Very concerned"
+    const concernedCount = data.filter(
         (response) =>
-            response.sdg_awareness === "Yes"
+            response.sdg_awareness === "Concerned" ||
+            response.sdg_awareness === "Very concerned"
     ).length;
 
-    const seriousPercentage =
+    const awarePercentage =
         total === 0
             ? 0
-            : Math.round((seriousCount / total) * 100);
+            : Math.round((awareCount / total) * 100);
 
-    const awarenessPercentage =
+    const concernedPercentage =
         total === 0
             ? 0
-            : Math.round((awarenessCount / total) * 100);
+            : Math.round((concernedCount / total) * 100);
 
     document.getElementById(
         "totalResponses"
@@ -56,11 +59,11 @@ async function loadResults() {
 
     document.getElementById(
         "seriousPercentage"
-    ).textContent = seriousPercentage + "%";
+    ).textContent = awarePercentage + "%";
 
     document.getElementById(
         "sdgPercentage"
-    ).textContent = awarenessPercentage + "%";
+    ).textContent = concernedPercentage + "%";
 
     showResults(
         data,

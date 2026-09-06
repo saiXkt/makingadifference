@@ -15,7 +15,7 @@
     <header class="navbar">
 
         <a href="index.html" class="logo">
-            
+            <img src="images/dino.png" alt="SDG 15 Home">
         </a>
 
         <button class="menu-toggle" id="menuToggle">
@@ -58,44 +58,44 @@
                 <div class="question">
 
                     <h2>
-                        1. How serious do you think deforestation is?
+                        1. How aware were you of deforestation and its impact on ecosystems before visiting this site?
                     </h2>
 
                     <label>
                         <input
                             type="radio"
                             name="deforestation"
-                            value="Not serious"
+                            value="Not aware"
                             required
                         >
-                        Not serious
+                        Not aware
                     </label>
 
                     <label>
                         <input
                             type="radio"
                             name="deforestation"
-                            value="Slightly serious"
+                            value="Somewhat aware"
                         >
-                        Slightly serious
+                        Somewhat aware
                     </label>
 
                     <label>
                         <input
                             type="radio"
                             name="deforestation"
-                            value="Serious"
+                            value="Aware"
                         >
-                        Serious
+                        Aware
                     </label>
 
                     <label>
                         <input
                             type="radio"
                             name="deforestation"
-                            value="Very serious"
+                            value="Very aware"
                         >
-                        Very serious
+                        Very aware
                     </label>
 
                 </div>
@@ -103,23 +103,131 @@
                 <div class="question">
 
                     <h2>
-                        2. Have you heard of SDG 15 before?
+                        2. Which environmental issue concerns you the most?
+                    </h2>
+
+                    <label>
+                        <input
+                            type="radio"
+                            name="main_issue"
+                            value="Deforestation & habitat loss"
+                            required
+                        >
+                        Deforestation & habitat loss
+                    </label>
+
+                    <label>
+                        <input
+                            type="radio"
+                            name="main_issue"
+                            value="Unsustainable farming practices"
+                        >
+                        Unsustainable farming practices
+                    </label>
+
+                    <label>
+                        <input
+                            type="radio"
+                            name="main_issue"
+                            value="Plastic & waste pollution"
+                        >
+                        Plastic & waste pollution
+                    </label>
+
+                    <label>
+                        <input
+                            type="radio"
+                            name="main_issue"
+                            value="Urban expansion"
+                        >
+                        Urban expansion
+                    </label>
+
+                </div>
+
+                <div class="question">
+
+                    <h2>
+                        3. How concerned are you about the health of forests and ecosystems in your area?
                     </h2>
 
                     <label>
                         <input
                             type="radio"
                             name="sdg_awareness"
-                            value="Yes"
+                            value="Not concerned"
                             required
                         >
-                        Yes
+                        Not concerned
                     </label>
 
                     <label>
                         <input
                             type="radio"
                             name="sdg_awareness"
+                            value="Somewhat concerned"
+                        >
+                        Somewhat concerned
+                    </label>
+
+                    <label>
+                        <input
+                            type="radio"
+                            name="sdg_awareness"
+                            value="Concerned"
+                        >
+                        Concerned
+                    </label>
+
+                    <label>
+                        <input
+                            type="radio"
+                            name="sdg_awareness"
+                            value="Very concerned"
+                        >
+                        Very concerned
+                    </label>
+
+                </div>
+
+                <div class="question">
+
+                    <h2>
+                        4. Before this, had you ever taken part in an environmental action (tree planting, clean-up, reducing waste, etc.)?
+                    </h2>
+
+                    <label>
+                        <input
+                            type="radio"
+                            name="participation"
+                            value="Yes, regularly"
+                            required
+                        >
+                        Yes, regularly
+                    </label>
+
+                    <label>
+                        <input
+                            type="radio"
+                            name="participation"
+                            value="Yes, once or twice"
+                        >
+                        Yes, once or twice
+                    </label>
+
+                    <label>
+                        <input
+                            type="radio"
+                            name="participation"
+                            value="No, but interested"
+                        >
+                        No, but interested
+                    </label>
+
+                    <label>
+                        <input
+                            type="radio"
+                            name="participation"
                             value="No"
                         >
                         No
@@ -130,125 +238,44 @@
                 <div class="question">
 
                     <h2>
-                        3. Which environmental issue concerns you most?
-                    </h2>
-
-                    <label>
-                        <input
-                            type="radio"
-                            name="main_issue"
-                            value="Deforestation"
-                            required
-                        >
-                        Deforestation
-                    </label>
-
-                    <label>
-                        <input
-                            type="radio"
-                            name="main_issue"
-                            value="Wildlife loss"
-                        >
-                        Wildlife loss
-                    </label>
-
-                    <label>
-                        <input
-                            type="radio"
-                            name="main_issue"
-                            value="Climate change"
-                        >
-                        Climate change
-                    </label>
-
-                    <label>
-                        <input
-                            type="radio"
-                            name="main_issue"
-                            value="Water pollution"
-                        >
-                        Water pollution
-                    </label>
-
-                </div>
-
-                <div class="question">
-
-                    <h2>
-                        4. Have you participated in an environmental activity?
-                    </h2>
-
-                    <label>
-                        <input
-                            type="radio"
-                            name="participation"
-                            value="Yes"
-                            required
-                        >
-                        Yes
-                    </label>
-
-                    <label>
-                        <input
-                            type="radio"
-                            name="participation"
-                            value="No"
-                        >
-                        No
-                    </label>
-
-                </div>
-
-                <div class="question">
-
-                    <h2>
-                        5. Which action would you be most likely to take?
+                        5. Which action are you most willing to commit to after this?
                     </h2>
 
                     <label>
                         <input
                             type="radio"
                             name="preferred_action"
-                            value="Plant trees"
+                            value="Plant a tree"
                             required
                         >
-                        Plant trees
+                        Plant a tree
                     </label>
 
                     <label>
                         <input
                             type="radio"
                             name="preferred_action"
-                            value="Protect wildlife"
+                            value="Support sustainable farming"
                         >
-                        Protect wildlife
+                        Support sustainable farming
                     </label>
 
                     <label>
                         <input
                             type="radio"
                             name="preferred_action"
-                            value="Spread awareness"
+                            value="Reduce plastic use"
                         >
-                        Spread awareness
+                        Reduce plastic use
                     </label>
 
                     <label>
                         <input
                             type="radio"
                             name="preferred_action"
-                            value="Change daily habits"
+                            value="Share awareness with others"
                         >
-                        Change daily habits
-                    </label>
-
-                    <label>
-                        <input
-                            type="radio"
-                            name="preferred_action"
-                            value="Use Ecosia"
-                        >
-                        Use Ecosia
+                        Share awareness with others
                     </label>
 
                 </div>
@@ -273,6 +300,8 @@
         <p>
             SDG 15: Life on Land X The Good Dinosaur
         </p>
+
+        <a href="about.html">About</a>
 
     </footer>
 

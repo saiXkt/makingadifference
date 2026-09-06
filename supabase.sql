@@ -1,6 +1,4 @@
--- =========================================
--- CREATE SURVEY TABLE
--- =========================================
+
 
 create table survey_responses (
 
@@ -23,17 +21,13 @@ create table survey_responses (
 );
 
 
--- =========================================
--- ENABLE ROW LEVEL SECURITY
--- =========================================
+
 
 alter table survey_responses
 enable row level security;
 
 
--- =========================================
--- ALLOW ANONYMOUS USERS TO SUBMIT
--- =========================================
+
 
 create policy "Allow anonymous survey submissions"
 
@@ -46,9 +40,6 @@ to anon
 with check (true);
 
 
--- =========================================
--- ALLOW ANONYMOUS USERS TO VIEW RESULTS
--- =========================================
 
 create policy "Allow anonymous users to read survey data"
 
