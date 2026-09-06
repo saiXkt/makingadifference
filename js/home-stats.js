@@ -31,13 +31,14 @@ async function loadHomeStats() {
 
     const seriousCount = data.filter(
         (response) =>
-            response.deforestation === "Serious" ||
-            response.deforestation === "Very serious"
+            response.deforestation === "Aware" ||
+            response.deforestation === "Very aware"
     ).length;
 
     const awarenessCount = data.filter(
         (response) =>
-            response.sdg_awareness === "Yes"
+            response.sdg_awareness === "Concerned" ||
+            response.sdg_awareness === "Very concerned"
     ).length;
 
     const seriousPercentage =
